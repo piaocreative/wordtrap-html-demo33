@@ -1,0 +1,49 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: team.scss
+
+-----------------------------------------------------------------------------------*/
+
+.team {
+	position: relative;
+	
+	.team-info {
+		font-weight: 500 !important;
+		padding-top: 2rem;
+		font-family: $body-font;
+
+		.team-name {
+			font-size: $h4-font-size;
+			line-height: 1;
+			margin-bottom: 0.5rem;
+			font-weight: 400;
+		}
+
+		.team-detail {
+			font-size: $h5-font-size;
+			color: #d4c4b1;
+			line-height: 1;
+			margin-bottom: 0;
+			font-weight: 400;
+		}
+	}
+
+	&:hover {
+		.team-info {
+			opacity: 1;
+		}
+	}
+}
+
+hr {
+	margin-top: 3.125rem;
+}
+.post-detail {
+	margin-top: 3rem;
+	
+	h1 {
+		font-size: 6.25rem;
+		font-weight: 500;
+	}
+}

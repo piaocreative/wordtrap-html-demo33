@@ -1,0 +1,117 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	input {
+	
+	}
+
+	.widget-title {
+		font-size: $h4-font-size;
+		font-family: $heading-font;
+		font-weight: 700;
+		margin-bottom: 2.3rem;
+	}
+
+	&.widget-contact {
+		ul {
+			li {
+				line-height: 1;
+				margin-bottom: 1.3rem;
+			}
+		}
+
+		span {
+			font-size: $h4-font-size;
+			color: $heading-color;
+			font-weight: 500;
+		}
+	}
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			li {
+				padding: 0 0.35rem;
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					color: $heading-color;
+					display: inline-block;
+					line-height: 1.8125rem;
+					vertical-align: middle;
+					text-align: center;
+					transition: all 0.3s ease-in-out;
+					font-size: 1.125rem;
+		
+					&:hover {
+						color: $theme-color;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			li {
+				margin-bottom: 1.3rem;
+				line-height: 1;
+
+				a {
+					color: $heading-color;
+					font-weight: 400;
+					font-size: 1rem;
+					transition: all 0.3s ease-in-out;
+
+					&:hover {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				text-align: center;
+				margin-left: 0.4rem;
+				width: 4rem;
+				padding: 0.125rem 0;
+				background-color: $third-color;
+				
+				img {
+					width: 3rem;
+				}
+			}
+		}
+	}
+}

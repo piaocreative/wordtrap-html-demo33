@@ -1,0 +1,61 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+
+// Textarea
+textarea {
+    resize: none;
+}
+
+// Required field
+.required-field {
+    position: relative;
+}
+
+.form-control {
+    background-color: transparent;
+    border-bottom: 1px solid #292929;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0;
+    border-radius: 0;
+    color: #292929;
+    opacity: 0.5;
+    padding-right: 0;
+
+    &:focus {
+            box-shadow: none;
+            border: 0;
+            border-bottom: 1px solid $theme-color !important;
+            opacity: 1;
+    }
+}
+
+.form-select {
+    background-color: transparent;
+    border-bottom: 1px solid #292929;
+    padding-bottom: 0.65rem;
+    padding-top: 0.65rem;
+    padding-left: 0;
+    border-radius: 0;
+    color: #292929;
+    opacity: 0.5;
+    padding-right: 0;
+    background-image: url(../images/dropdown.png);
+    background-size: 1.3%;
+    background-position: right 0 center;
+
+    &:focus {
+        box-shadow: none;
+        border: 0;
+        border-bottom: 1px solid $theme-color !important;
+        opacity: 1;
+}
+}

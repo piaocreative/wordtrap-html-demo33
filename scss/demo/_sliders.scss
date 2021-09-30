@@ -1,0 +1,92 @@
+
+/* ----------------------------------------------------------------
+
+	slider.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Slider
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for all sliders. Thanks!
+-----------------------------------------------------------------*/
+
+.prev {
+	margin-right: 2.9rem;
+}
+
+.next {
+	margin-right: 2.9rem;
+}
+
+.slider-number {
+	font-weight: 500;
+	font-size: $h5-font-size;
+	margin-right: 2rem;
+}
+
+#team {
+	.item {
+		margin-right: 2.5rem;
+	}
+}
+
+.a-left.control-c.prev.slick-prev.slick-arrow {
+	width: 20px;
+	height: 10px;
+}
+
+.col-xl-6.offset-xl-1.pt-xl-0.pt-5 .next {
+	width: 20px;
+	height: 10px;
+}
+
+#team
+{
+	.slick-initialized.slick-slider .control-c {
+		position: absolute;
+		top: 458px;
+	}
+	.a-left.control-c.prev.slick-prev.slick-arrow {
+		left: -350px;
+	}
+	.a-right.control-c.next.slick-next.slick-arrow {
+		left: -320px;
+	}
+	
+	.slick-slide.slick-current.slick-active img {
+		display: block;
+	}
+	.slick-slide img {
+		display: block;
+	}
+	
+	.slick-slide.slick-current.slick-active{opacity: 1;}
+	.slick-slide.slick-active{opacity: 0.7;}
+	.slick-slide.slick-current.slick-active {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4); 
+	transition: all 0.5s;  
+	}
+	
+	.slick-list { 
+	padding:45px 40px !important;
+	margin-left:100px !important;
+	}
+}
+
+#team .item {
+	margin-right: 2.5rem;
+	margin-left: 2.5rem;
+}
+#team .slick-list {
+	padding: 80px 35px !important;
+	margin-left: 00px !important;
+}
+
+

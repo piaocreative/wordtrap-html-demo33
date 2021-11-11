@@ -15,6 +15,10 @@
 	Add here extra styles for demo. Thanks!
 -----------------------------------------------------------------*/
 
+.container-fluid {
+	overflow: hidden;
+}
+
 .contact {
 	padding-top: 11.75rem;
 	padding-bottom: 11.3rem;
@@ -43,23 +47,11 @@
 	.feedback-form {
 		background-color: white;
 		padding: 4.625rem;
-		
-		.btn {
-			background-color: transparent;
-		}
 	}
 
 }
 
-.about-section {
-	padding-top: 12.675rem;
-	padding-bottom: 8rem;
-}
-
 .error-404 {
-	padding-top: 7rem;
-	padding-bottom: 6.875rem;
-
 	h1 {
 		color: white;
 		font-size: 18rem;
@@ -85,61 +77,38 @@
 
 }
 
-.main-bg {
-	background-image: url(../images/main-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
+.list {
+	display: flex;
 
-.btn {
-	width: 16.25rem;
-}
+	.count{
+		position: relative;
+	}
 
-.intro-section {
-	background-image: url(../images/ads/ads1.png);
-	background-position: right;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 6.3rem;
-	padding-bottom: 6.3rem;
-}
-
-	.list {
-		display: flex;
-
-		.count{
+	.rotated-half-circle {
+			width: 4.3rem;
+			height: 4.3rem;
+			border: 2px solid $theme-color;
+			border-radius: 50%;
+			border-bottom-color: transparent;
+			border-left-color: transparent;
+			transform: rotate(-149deg);
 			position: relative;
-		}
+	}
 
-		.rotated-half-circle {
-				width: 4.3rem;
-				height: 4.3rem;
-				border: 2px solid $theme-color;
-				border-radius: 50%;
-				border-bottom-color: transparent;
-				border-left-color: transparent;
-				transform: rotate(-149deg);
-				position: relative;
-		}
-
-		.count span {
-				position: absolute;
-				text-align: top;
-				top: 7%;
-				left: 4%;
-				font-size: 3rem;
-				line-height: 1;
-				color: $theme-color;
-				font-weight: 400;
-				margin-right: 1rem;
-				margin-left: 1rem;
-		}
+	.count span {
+			position: absolute;
+			text-align: top;
+			top: 7%;
+			left: 4%;
+			font-size: 3rem;
+			line-height: 1;
+			color: $theme-color;
+			font-weight: 400;
+			margin-right: 1rem;
+			margin-left: 1rem;
+	}
 }
 
-#content {
-	background-color: #fff5ee;
-}
 
 .read_more {
 	padding-top: 0.68rem;
@@ -147,24 +116,16 @@
 	font-weight: 500;
 }
 
-.history-content {
-	margin-top: 4.1rem;
 
+hr {
+	margin-top: 3.125rem;
 }
 
-.me-n1 {
-	@include media-breakpoint-up(xl) {
-	margin-right: -1rem;
+.about-detail {
+	margin-top: 3rem;
+	
+	h1 {
+		font-size: 6.25rem;
+		font-weight: 500;
 	}
-}
-
-.me-n14 {
-	@include media-breakpoint-up(xl) {
-		margin-right: -14rem;
-	}
-}
-
-.section-bg {
-	background-size: cover;
-	background-repeat: no-repeat;
 }
